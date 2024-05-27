@@ -1,0 +1,56 @@
+.payment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+       }
+
+  .pay-course {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-top: 5%;
+  }
+
+  .pay-text {
+    width: 46%;
+    margin-top: 2%;
+  }
+
+  img {
+    border-radius: 15px;
+    margin-top: 1%;
+    width: 45%;
+    height: 45%;
+  }
+  .pay-text1 {
+    margin-top: 2rem;
+    width: 46%;
+  }
+  .Amount {
+    background-color: #d9d9d9;
+
+    cursor: pointer;
+    background: linear-gradient(to top right, #cac8c8, #d9d9d9);
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  .payment-button{
+    width: 46%;
+  }
+}

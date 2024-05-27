@@ -1,0 +1,233 @@
+.access {
+  width: 100%;
+  height: 100vh;
+   padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  &_form-container {
+    width: 20%;
+    .form_type {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      color: rgb(1, 127, 211);
+    }
+
+    .form {
+      width: 100%;
+
+      .forgot {
+        @include format_btn;
+        color: rgb(18, 98, 151);
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      .access_btn {
+        width: 100%;
+        height: 6rem;
+        font-size: 1.4rem;
+      }
+
+      .create_account-option {
+        font-size: 1.4rem;
+        .signup_btn {
+          @include format_btn;
+          padding: 0;
+          color: rgb(33, 143, 216);
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .img_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.complete_reg {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  .cap {
+    height: 9%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .stepper_container {
+    width: 100%;
+    height: 6%;
+    background: #d9d9d9;
+    display: flex;
+
+    .step {
+      height: 100%;
+      width: (100%/3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .counter {
+        background: #686868;
+        height: 3.5rem;
+        width: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #efefef;
+        border-radius: 50rem;
+      }
+      .step_name {
+        font-size: 1.4rem;
+        color: #efefef;
+        margin-left: 1rem;
+        font-weight: 500;
+        color: #2b2b2b;
+      }
+    }
+
+    .complete {
+      background: #00386b;
+
+      .counter {
+        background: #185e9e;
+      }
+      .step_name {
+        font-size: 1.4rem;
+        color: #efefef;
+        margin-left: 1rem;
+        font-weight: 500;
+      }
+    }
+
+    .active {
+      background: #c2c2c2;
+
+      .counter {
+        background: #686868;
+      }
+
+      .step_name {
+        color: #2b2b2b;
+      }
+    }
+  }
+
+  .step_content {
+    height: 84%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .form_container {
+      width: 34%;
+      margin-right: 5rem;
+      .form_title {
+        font-size: 3rem;
+        margin: 2rem 0;
+        margin-left: 18rem;
+      }
+
+      .form {
+        display: flex;
+        width: 100%;
+        .passport_container {
+          background: rgba(128, 128, 128, 0.205);
+          height: 18rem;
+          width: 18rem;
+          margin-right: 3rem;
+          position: relative;
+          border-radius: 5px;
+
+          input {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+          }
+
+          .click {
+            position: absolute;
+            top: 0;
+            top: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            z-index: -1;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+
+            i {
+              color: rgb(44, 48, 85);
+            }
+          }
+        }
+
+        .hold_input {
+          width: 80%;
+          .form-floating {
+            @include bootstrap_input(5rem);
+          }
+        }
+      }
+    }
+
+    .normal_input {
+      width: 20%;
+      .form {
+        display: block;
+        .form-floating {
+          @include bootstrap_input(5rem);
+        }
+
+        .selected_container {
+          margin: 5rem 0;
+          width: 150%;
+          display: flex;
+          flex-wrap: wrap;
+          .item_selected {
+            font-size: 1.3rem;
+            background: rgb(42, 73, 99);
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            color: #efefef;
+            border-radius: 50px;
+            margin: 0.5rem;
+            .del {
+              @include format_btn;
+              color: rgb(95, 158, 252);
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .img_container {
+      height: 100%;
+      width: 40%;
+      display: flex;
+      align-items: flex-end;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

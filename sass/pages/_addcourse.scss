@@ -1,0 +1,67 @@
+.addcourse {
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  max-height: 60%;
+  gap: 5%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+
+  .add-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    width: 105%;
+    max-height: 60%;
+    overflow-y: auto;
+    gap: 2%;
+    margin-top: 3rem;
+
+    img {
+      border-radius: 7px;
+    }
+  }
+}
+.bg {
+  background-color: #00386b;
+  color: rgb(246, 244, 244);
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+.add_container {
+  margin-top: 20%;
+  button {
+    width: 20%;
+  }
+}
+.btn1 {
+  background-color: #fff5f5;
+  color: red;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.btn0 {
+  color: white;
+  padding: 1rem;
+  background-color: #0556a0;
+  border: none;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  th,
+  td {
+    border-bottom: 1px solid black;
+    padding: 1.5rem;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .img_container img {
+    display: none;
+  }
+}

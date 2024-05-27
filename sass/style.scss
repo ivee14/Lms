@@ -1,0 +1,23 @@
+@import 'abstract/mixin';
+@import 'abstract/variable';
+
+@import 'base/base';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/animation';
+
+@import 'layouts/main_nav';
+@import 'layouts/top_nav';
+
+@import 'pages/access';
+/* @import 'pages/dashboard'; */
+@import 'pages/_signIn.scss';
+@import 'pages/_registration.scss';
+@import 'pages/_landingpage.scss';
+@import 'pages/_course.scss';
+@import 'pages/_learning.scss';
+@import 'pages/_addcourse.scss';
+@import 'pages/_discussion.scss';
+@import 'pages/_admin.scss';
+@import 'pages/_payment.scss';

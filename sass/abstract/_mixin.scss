@@ -1,0 +1,243 @@
+@mixin format_btn {
+  background: none;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+@mixin submit_btn {
+  @include format_btn;
+  background: linear-gradient(to top right, #032e57, #0556a0);
+  color: rgb(221, 221, 221);
+  font-size: 1.3rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+@mixin white_btn {
+  @include format_btn;
+  background: white;
+  font-size: 1.2rem;
+  color: rgb(49, 49, 49);
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  box-shadow: $shadow;
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+
+  i {
+    margin-right: 0.5rem;
+  }
+}
+
+@mixin create_btn {
+  @include format_btn;
+  background: linear-gradient(to right, #051e22, #5a944d);
+  font-size: 1.4rem;
+  color: rgb(253, 253, 253);
+  padding: 1rem;
+  border-radius: 7px;
+
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+
+  i {
+    margin-right: 0.5rem;
+  }
+}
+
+@mixin format_input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+@mixin bootstrap_input($height) {
+  width: 100%;
+  input,
+  select {
+    background: #efefef;
+    font-size: 1.4rem;
+    height: $height;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+}
+
+@mixin card($width, $height, $padding) {
+  width: $width;
+  max-height: $height;
+  padding: $padding;
+  background: white;
+  box-shadow: 0 0 10px #e0e0e0;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+@mixin filterCard($width, $height, $top, $right, $left, $bottom) {
+  @include card($width, $height, 0);
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+
+  .accordion-item {
+    .accordion-header {
+      .accordion-button {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #3a424d;
+      }
+    }
+
+    .accordion-body {
+      span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@mixin search($width) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 0.7rem 1rem;
+  width: $width;
+  border-radius: 6px;
+  position: relative;
+
+  @include respond(phone) {
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  i {
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+
+  input {
+    @include format_input;
+    font-size: 1.3rem;
+    transition: all 0.5s;
+    width: 90%;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
+  }
+
+  .search_matches-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 4rem;
+    z-index: 3;
+    background: white;
+    box-shadow: $shadow;
+    height: fit-content;
+    height: -moz-fit-content;
+    max-height: 45vh;
+    overflow-y: auto;
+    @include scroll;
+    z-index: 20000;
+    .name {
+      font-size: 1.5rem;
+      padding: 1rem;
+      color: $grey;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+
+      &:hover {
+        background: #eee;
+      }
+      span {
+        font-size: 1.3rem;
+        color: rgb(8, 8, 8);
+        display: block;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+@mixin scroll {
+  scrollbar-width: thin;
+  scrollbar-color: $dark rgba(194, 198, 243, 0.247);
+  @include respond(phone) {
+    scrollbar-width: none;
+  }
+  &::-webkit-scrollbar {
+    width: 4px !important; /* width of the entire scrollbar */
+    display: none !important;
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(194, 198, 243, 0.247);
+    border: none; /* color of the tracking area */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $dark; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    // border: 3px solid orange; /* creates padding around scroll thumb */
+  }
+}
+
+@mixin formInput($width) {
+  background: #fafafa;
+  box-shadow: 0 0 15px rgb(214, 214, 214);
+  padding: 1.2rem 1rem;
+  width: $width;
+  border-radius: 8px;
+  input,
+  select,
+  textarea {
+    @include format_input;
+    border: none;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    width: 90%;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land-one {
+    @media (max-width: 1400px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 1500px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large-screens {
+    @media (min-width: 1500px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.learning-nav {
+  width: 100%;
+  background-color: #29325d;
+}
+.learning-logo {
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 70%;
+
+  .search-container {
+    position: relative;
+    width: 250px;
+    .search-input {
+      width: 100%;
+      padding-left: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      margin-top: 1rem;
+      color: white;
+      height: 80%;
+      background-color: #ededed63;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 40%;
+      right: 6%;
+    }
+  }
+}
+.style {
+  font-size: 14px;
+}
+.learning-div {
+  width: 90%;
+  position: relative;
+  left: 7%;
+
+  &-first-div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 1%;
+   
+
+    h3:hover {
+      cursor: pointer;
+    }
+
+    
+  }
+  &-second-div {
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+  }
+  .div-img {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    border-top: 2px solid #E3E3E3; 
+    border-left:2px solid #E3E3E3;
+    border-right:2px solid #E3E3E3;
+    overflow-x:scroll;
+   
+    
+   span{
+    padding-left: 20px; 
+  padding-left: 32px;
+  border-left: 2px solid #E3E3E3;
+  width: 62%;
+  margin-top: 7px;
+
+
+  img{
+    cursor: pointer;
+    margin-top: .5rem;
+  
+  }
+  
+   }
+  }
+  
+}
+.help{
+  display: flex;
+  justify-content: space-between;
+  width: 63%;
+  margin-top: 5rem;
+}
+.learning-img {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  width: 90%;
+
+
+
+  .img-text {
+    width: 70%;
+    max-width: 70%;
+    height: 80%;
+    .img {
+      width: 97%;
+      height: 86%;
+    }
+  }
+
+  .img-flex {
+    background-color: #d9d9d9;
+    width: 97%;
+    padding: 1rem;
+    overflow-x: scroll;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .img-flex1:hover {
+      text-decoration: underline blue;
+    }
+
+    .img-flex1 {
+      width: 60%;
+    }
+  }
+  .Assessment-div {
+    margin-right: 3%;
+    h4 {
+      width: 100%;
+    }
+    input[type='range'] {
+      width: 90%;
+    }
+    .range {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      .inline {
+        display: flex;
+        margin-top: 1rem;
+        gap: 10px;
+
+        select {
+          padding: 0.5rem;
+          width: 250%;
+        }
+      }
+    }
+    .accords {
+      width: 400px;
+      height: 340px;
+      overflow-y: auto;
+    }
+
+    form {
+      textarea {
+        background-color: #d9d9d9;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 2rem;
+        width: 100%;
+      }
+      input {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+label {
+  font-size: 12px;
+  margin-top: 0.8rem;
+}
+input[type='file'] {
+  margin: 1rem;
+}
+
+.Description-text {
+  display: flex;
+  gap: 3%;
+  width: 45%;
+}
+@media (max-width: 964px) {
+  .learn {
+    width: 110%;
+
+    .img-text {
+      width: 90%;
+    }
+    /* .img-flex {
+      overflow-x: scroll;
+    } */
+
+    .learning-logo {
+      width: 80%;
+      display: flex;
+      gap: 5%;
+    }
+    .learning-div-first-div {
+      display: none;
+
+      .learning-div-second-div {
+        width: 100%;
+      }
+    }
+  }
+  .learning-img {
+    display: block;
+  }
+
+  .div-img {
+    span{
+      display: none;
+    }
+   
+  }
+
+  .accords {
+    width: 90% !important;
+  }
+}

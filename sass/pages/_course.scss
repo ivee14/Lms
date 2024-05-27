@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  height: 100vh;
+}
+.course-header {
+  display: flex;
+  width: 100%;
+}
+
+.course-header-div {
+  width: 70%;
+}
+.create-button {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 3%;
+
+  h4:hover {
+    text-decoration: underline;
+  }
+}
+.course-main {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5%;
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.form {
+  display: block;
+  width: 20%;
+}
+
+.last-bit-div {
+  display: flex;
+  width: 80%;
+  position: relative;
+}
+
+.last-bit-div span {
+  flex: 1;
+}
+
+.last-bit-div img {
+  position: absolute;
+  bottom: -40px;
+  right: 30%;
+}
+.card-enroll {
+  display: flex;
+  gap: 3rem;
+  margin-top: 10px;
+
+  button {
+    height: 28px;
+    margin-bottom: 10px;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+}
+.body-main {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  margin-left: 3%;
+
+  .div-color {
+    background-color: #ebe7e7;
+    width: 60%;
+    position: relative;
+    left: 12%;
+    padding: 2rem;
+    font-size: 14px;
+
+    .dev-icon {
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 964px) {
+  .course-main {
+    display: block;
+    width: 100%;
+  }
+  .course-header-div {
+    display: none;
+  }
+  .course_card {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5%;
+    height: fit-content;
+  }
+  .left-nav {
+    height: auto;
+  }
+}

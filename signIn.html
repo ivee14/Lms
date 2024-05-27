@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/icofont.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main_contents">
+      <!-- forgot password screen -->
+      <div class="main_contents_div d-none">
+        <div class="main_contents_div-one">
+          <img
+            src="img/digital security, stealing password and digital data.jpg"
+            alt="image"
+          />
+
+          <div class="main_contents_div-two">
+            <div class="txt1">
+              <h1><strong>Forgot password?</strong></h1>
+              <h4>Enter Your Email to Reset</h4>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Email" id="email" />
+            </form>
+
+            <button id="password" style="text-align: center">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- verification screen -->
+      <div class="screen">
+        <div class="verification-screen d-none">
+          <img
+            src="img/digital security, stealing password and digital data.jpg"
+            alt="image"
+            width="60%"
+          />
+
+          <div class="verification-screen-div">
+            <h1><strong>Enter Verification Code</strong></h1>
+            <h4>
+              Enter the five digit Verification code that was sent to your email
+            </h4>
+
+            <form action="">
+              <input type="text" class="button" placeholder="5" />
+              <input type="text" class="button" placeholder="4" />
+              <input type="text" class="button" placeholder="-" />
+              <input type="text" class="button" placeholder="-" />
+              <input type="text" class="button" placeholder="-" />
+            </form>
+
+            <button class="password" style="text-align: center">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- reset password -->
+      <div class="main_contents_div-one Reset-password d-none">
+        <img
+          src="img/digital security, stealing password and digital data.jpg"
+          alt="image"
+        />
+
+        <div class="main_contents_div-two">
+          <h1><strong>Reset Password</strong></h1>
+          <span>Create your New Password</span>
+
+          <form action="">
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Repeat password" />
+          </form>
+
+          <button class="password" style="text-align: center">Submit</button>
+        </div>
+      </div>
+
+      <!-- change password -->
+      <div class="main_contents_div-one change-password d-none">
+        <img
+          src="img/digital security, stealing password and digital data.jpg"
+          alt="image"
+          style="width: 30%"
+        />
+
+        <div class="new-password">
+          <h1>Change Password</h1>
+          <h4>Create your New Password</h4>
+
+          <form action="" id="input-form">
+            <input
+              type="password"
+              placeholder="Old Password"
+              class="btn btn-light"
+            />
+            <input
+              type="password"
+              placeholder="New password"
+              class="btn btn-light"
+            />
+            <input
+              type="password"
+              placeholder="Repeat password"
+              class="btn btn-light"
+            />
+          </form>
+          <button class="password" style="text-align: center">Submit</button>
+        </div>
+      </div>
+
+      <!-- sign in -->
+      <div class="sign-in-div d-none">
+        <div class="sign-in">
+          <div>
+            <h1>Sign in</h1>
+
+            <form action="" id="input-form">
+              <input type="text" placeholder="Username/Email" id="email" />
+              <input
+                type="password"
+                placeholder="password"
+                class="btn btn-light"
+                style="text-align: left"
+              />
+              <h4>Forgot Password?</h4>
+              <button class="password" style="text-align: center">
+                Submit
+              </button>
+            </form>
+
+            <h4 class="sign-in-h4">
+              Don't have an account? <a href="#">Sign Up</a>
+            </h4>
+          </div>
+
+          <img src="img/Girl-Hero-Overlay 1.png" alt="image" width="50%" />
+        </div>
+      </div>
+
+      <!-- sign up -->
+      <div class="sign-up-div d-none">
+        <div class="sign-up">
+          <div>
+            <h1>Sign up</h1>
+
+            <form action="" id="input-form">
+              <input type="text" placeholder="Name" id="email" />
+              <input type="tel" placeholder="Phone Number" />
+              <input type="email" placeholder="Email" id="emails" />
+            </form>
+            <button class="password" style="text-align: center">Submit</button>
+            <h4 class="sign-up-h4">
+              Already have an account? <a href="#">Sign in</a>
+            </h4>
+          </div>
+
+          <img src="img/Girl-Hero-Overlay 1.png" alt="image" width="40%" />
+        </div>
+      </div>
+    </main>
+    <script src="sass/vendors/bootstrap.min.js"></script>
+  </body>
+</html>

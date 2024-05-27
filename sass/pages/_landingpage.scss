@@ -1,0 +1,388 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  h2 {
+    font-weight: 600px;
+    font-size: 40px;
+    line-height: 46.88px;
+  }
+}
+.navbar-div {
+  background-color: #29325d;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.3rem;
+  width: 100%;
+  .search-container {
+    position: relative;
+    width: 250px;
+    z-index: 0;
+    cursor: pointer;
+    .search-input {
+      width: 100%;
+      padding: 12px 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      margin-top: 1rem;
+      color: white;
+      background-color: #ededed63;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 40%;
+      right: 6%;
+    }
+  }
+
+  .ul-element {
+    background-color: #29325d;
+    color: white;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 5px;
+    z-index: 1000;
+    padding: 10px;
+    cursor: pointer;
+  }
+}
+
+.link {
+  margin-top: 2rem;
+  display: inline-block;
+  li {
+    display: inline-block;
+    margin: 0;
+    a {
+      display: inline-block;
+      color: white;
+      font-size: 15px;
+      margin-left: 1rem;
+      &:hover {
+        text-decoration: underline blue;
+      }
+    }
+  }
+}
+.Main-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2efef;
+
+  & > div {
+    width: 50%;
+    margin-left: 8rem;
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 54px;
+    color: #00386b;
+    margin-bottom: 4rem;
+    width: 110%;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 17.58px;
+    width: 87%;
+  }
+  img {
+    width: 90%;
+    object-fit: cover;
+  }
+}
+
+.first-div-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  margin-top: 2rem;
+
+  .div-cards {
+    width: 80%;
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 3%;
+      width: 90%;
+      margin-left: 1.5rem;
+
+      margin-top: 3rem;
+      .course_card {
+        width: 90%;
+      }
+    }
+    img {
+      border-radius: 4px;
+      width: 100%;
+    }
+  }
+}
+.page-img {
+  float: inline-end;
+  margin-right: 18%;
+  margin-top: 1rem;
+
+  button {
+    padding: 0;
+  }
+}
+.first-section-categories {
+  height: fit-content;
+  width: 100%;
+  background-color: #f8f8f8;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  .section-categories {
+    width: 85%;
+    position: relative;
+    left: 10%;
+    &-div {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      width: 100%;
+      margin-top: 3rem;
+
+      img {
+        width: 50%;
+      }
+    }
+    .section-categories-div h4 {
+      padding-left: 5rem;
+    }
+  }
+}
+.section-instructors {
+  width: 90%;
+  margin-top: 3rem;
+  height: fit-content;
+  position: relative;
+  left: 10%;
+  &-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    gap: 3%;
+    width: 80%;
+    overflow: hidden;
+
+    .Instructors-card {
+      width: 60%;
+    }
+  }
+}
+.section-testimonials {
+  margin-top: 5rem;
+  background-color: #f8f8f8;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .test-text {
+    margin-left: 10%;
+  }
+  .testimonial-div {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 10%;
+    width: 72%;
+    margin-top: 3rem;
+
+    .card {
+      margin-left: 1.5rem;
+      padding-top: 0;
+      width: 45%;
+
+      .card-img {
+        display: flex;
+        margin-top: 0.5rem;
+        height: 30vh;
+
+        img {
+          position: relative;
+          bottom: 30px;
+        }
+
+        h4 {
+          width: 220%;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  .card h5 {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    right: 15px;
+    overflow-y: hidden;
+    height: fit-content;
+  }
+}
+.div-community {
+  display: flex;
+  width: 70%;
+  margin-top: 3rem;
+  position: relative;
+  left: 12%;
+
+  img {
+    width: 250%;
+  }
+  .txt {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  button {
+    padding: 1rem;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-top: 2rem;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 35%;
+  background-color: #d9d9d9;
+  margin-top: 7rem;
+  padding: 3% 0 0 5%;
+  width: 100%;
+
+  .footer-span {
+    width: 35%;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .footer-span1 {
+    width: 35%;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .footer-img {
+    padding-top: 4rem;
+  }
+}
+.modal {
+  .modal-dialog {
+    box-shadow: 0px 0px 14px #ccc;
+    border-radius: 15px;
+    border: none;
+    .modal-content{
+      .modal-body{
+        width: 100%;
+        .Testimonial-form {
+          background-color: white;
+          width: 90%;
+          z-index: 1;
+          padding: 5rem;
+          cursor: pointer;
+          
+          opacity: 1000;
+          form {
+            input {
+              width: 100%;
+              padding: 1.1rem;
+              background-color: #ededed;
+              border: none;
+              margin-bottom: 10px;
+              border-radius: 4px;
+            }
+          }
+          textarea {
+            background-color: #ededed;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+          }
+          .btn {
+            background-color: #dcdcdc;
+            padding: 1.2rem;
+            color: blue;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 964px) {
+  .nav-linkk {
+    display: none;
+  }
+  .Main-div {
+    width: 100%;
+    margin: 0;
+    h1 {
+      width: 190%;
+    }
+    h4 {
+      width: 180%;
+    }
+    img {
+      display: none;
+    }
+  }
+  .page-img {
+    display: none;
+  }
+  .first-div-cards {
+    margin: auto;
+  }
+  .section-instructors-div {
+    display: block !important;
+    height: auto;
+    width: 100%;
+
+    .Instructors-card {
+      margin-top: 2rem;
+    }
+  }
+  .testimonial-div,
+  .cards {
+    display: block !important;
+    width: 80%;
+  }
+  .card {
+    margin-top: 1rem;
+    width: 80% !important;
+
+    .card-img {
+      width: 100%;
+      height: 50%;
+
+      .card-i {
+        display: none !important;
+      }
+    }
+  }
+  .section-categories-div {
+    display: grid;
+    grid-template-columns: auto auto !important;
+  }
+  .div-community img {
+    display: none;
+  }
+  .footer-img {
+    display: none;
+  }
+}

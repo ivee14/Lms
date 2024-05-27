@@ -1,0 +1,69 @@
+.admin-main {
+  width: 100%;
+  height: 100vh;
+
+
+}
+.admin-div-one {
+  display: flex;
+  gap: 5%;
+  width: 65%;
+  margin: 1rem;
+  padding-top: 2%;
+  .admin-div {
+    display: flex;
+    gap: 5%;
+    .div-btn {
+      height: 55px;
+    }
+  }
+}
+.admin-form {
+  width: 90%;
+  height: auto;
+  padding: 2rem;
+  margin: 2rem 0 0 1rem;
+  display: flex;
+  gap: 10%;
+
+  table {
+    border-collapse: collapse;
+    width: 130%;
+    box-shadow: 0px 0px 14px #ccc;
+    border-radius: 10px;
+    height: auto;
+
+    img {
+      width: 23px;
+      height: 23px;
+    }
+
+    thead,
+    td,
+    tr {
+      border-bottom: 2px solid #f3f0f0;
+      width: auto;
+      height: 100%;
+      font-size: 13px;
+      padding: .7rem;
+    }
+  }
+}
+
+@media (max-width: 964px) {
+  .admin-div-one{
+    width: 50%;
+  }
+  .admin-div {
+    width: 50%;
+  }
+  .admin-form {
+    display: block;
+    width: 70%;
+   
+
+    table{
+      margin-bottom: 2rem;
+    }
+  }
+}

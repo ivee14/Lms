@@ -1,0 +1,209 @@
+.parent {
+  position: relative;
+
+  .filter_btn {
+    @include format_btn;
+    font-size: 1.4rem;
+    background: #4e4310;
+    color: #efefef;
+  }
+
+  .filter_card {
+    @include filterCard(30rem, 70vh, 3rem, -2rem, unset, unset);
+    overflow-y: auto;
+  }
+}
+
+.form-floating {
+  @include bootstrap_input(6rem);
+}
+
+.table-responsive {
+  .table {
+    thead,
+    tbody {
+      tr {
+        th,
+        td {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.profile_card {
+  @include card(20rem, 23rem, 1.5rem);
+  max-height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+  }
+
+  .card_detail {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+
+    .name {
+      font-weight: 700;
+      color: rgb(29, 29, 29);
+      margin-bottom: 0;
+    }
+
+    .specialized {
+      margin-bottom: 0;
+      font-size: 1.3rem;
+      color: rgb(73, 73, 73);
+    }
+  }
+}
+
+.course_card {
+  @include card(20rem, 23rem, 0);
+  max-height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .detail {
+    height: 10%;
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+
+    .name {
+      font-weight: 700;
+      color: rgb(29, 29, 29);
+      font-size: 1.3rem;
+    }
+
+    .price {
+      margin-bottom: 0;
+      font-size: 1.3rem;
+      color: #112435;
+      font-weight: 600;
+    }
+
+    .last_bit {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .icon_stat {
+        display: flex;
+        align-items: center;
+        .like {
+          display: flex;
+          align-items: center;
+          font-size: 1.3rem;
+          &:not(:last-of-type) {
+            margin-right: 1rem;
+          }
+
+          i {
+            font-size: 1.8rem;
+            color: #2d376b;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .cta {
+        @include submit_btn;
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
+}
+
+.search {
+  @include search(30%);
+  background: rgb(228, 228, 228);
+}
+
+.top_icon {
+  font-size: 1.2rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #2d376b;
+
+    i {
+      color: rgb(171, 187, 231);
+    }
+  }
+
+  i {
+    color: rgb(59, 59, 59);
+  }
+
+  .increase_icon {
+    font-size: 1.8rem;
+  }
+}
+
+.table_container {
+  .table_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .table_name {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  .table_row {
+    width: 100%;
+    // height:4rem;
+    background: white;
+    box-shadow: 0 0 15px rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    .row_data {
+      font-size: 1.3rem;
+      width: (100%/6);
+
+      &:last-of-type {
+        width: 6rem;
+      }
+
+      img {
+        width: 4.5rem;
+        height: 4.5rem;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 500rem;
+      }
+    }
+  }
+
+  .head {
+    box-shadow: none;
+  }
+}

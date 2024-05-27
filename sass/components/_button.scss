@@ -1,0 +1,14 @@
+button {
+  @include format_btn;
+}
+.submit_btn {
+  @include submit_btn;
+}
+
+.secondary_btn {
+  @include white_btn;
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: #e1eaf0;
+  box-shadow: unset;
+}
